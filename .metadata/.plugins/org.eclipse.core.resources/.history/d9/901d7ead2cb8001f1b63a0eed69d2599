@@ -1,0 +1,18 @@
+package calculator;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Calculation {
+	private Queue<Object> inputValue = new LinkedList<>();
+	
+	public void setInputValue(Queue<Object> inputValue) {
+		this.inputValue = inputValue;
+	}
+	
+	private void printValue() {
+		System.out.println(inputValue);
+		
+
+	}
+}

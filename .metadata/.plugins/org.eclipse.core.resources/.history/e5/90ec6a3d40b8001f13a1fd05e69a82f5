@@ -1,0 +1,53 @@
+package calculator;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Calculation {
+	private int value1, value2, inputSize, Total;
+	private String temp, peek, operation;
+	private Queue<String> queueValue = new LinkedList<>();
+	
+	
+	public void addToQueueValue(String inputValue) {
+		this.queueValue.add(inputValue);
+	}
+	
+	private String decreaseQueue() {
+		return temp = queueValue.remove();
+	}
+	
+	private void peekQueue() {
+		peek = this.queueValue.peek();
+	}
+	
+	public void calculatingValue() {
+		
+		while(queueValue.size() > 1) {
+			this.value1 = Integer.parseInt(decreaseQueue());
+			
+			this.operation = decreaseQueue();
+
+			this.value2 = Integer.parseInt(decreaseQueue());
+			
+			operation(value1, value2, operation);
+		}
+		
+		System.out.println("total : " + getTotal());
+		
+	}
+	
+	private void operation(int val1, int val2, String opr) {		
+		switch(opr) {
+			case "+" : { this.Total = val1 + val2; break;}
+			case "-" : { this.Total = val1 - val2; break;}
+			case "*" : { this.Total = val1 * val2; break;}
+			case "/" : { this.Total = val1 / val2; break;}
+			default : System.err.println("cant defined");
+		}
+	}
+	
+	public int getTotal() {
+		return this.Total;
+	}
+}

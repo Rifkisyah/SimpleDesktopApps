@@ -1,0 +1,39 @@
+package calculator;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Calculation {
+	private int value1, value2, Total;
+	private String temp, peek, operation[];
+	private Queue<String> queueValue = new LinkedList<>();
+	
+	public void addToQueueValue(String inputValue) {
+		this.queueValue.add(inputValue);
+	}
+	
+	private void decreaseQueue() {
+		temp = this.queueValue.remove();
+	}
+	
+	private void peekQueue() {
+		peek = this.queueValue.peek();
+	}
+	
+	private void filterValue() {
+		int index = 0;
+		
+	}
+	
+	public void operation() {
+		temp = queueValue.remove();
+		this.value1 = Integer.parseInt(temp);
+		
+		this.operation = queueValue.remove();
+		
+		temp = queueValue.remove();
+		this.value2 = Integer.parseInt(temp);
+		
+		System.out.println(operation);
+	}
+}

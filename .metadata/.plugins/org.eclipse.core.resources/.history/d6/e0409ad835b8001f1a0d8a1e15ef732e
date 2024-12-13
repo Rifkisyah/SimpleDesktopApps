@@ -1,0 +1,28 @@
+package calculator;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Calculation {
+	private int value1, value2;
+	private String temp, operation;
+	private Queue<String> queueValue = new LinkedList<>();
+	
+	public void addToQueueValue(String inputValue) {
+		this.queueValue.add(operation);
+	}
+	
+	
+	
+	public void pertambahan() {
+		temp = queueValue.poll();
+		this.value1 = Integer.parseInt(queueValue.poll());
+		
+		this.operation = queueValue.poll();
+		
+		temp = queueValue.remove();
+		this.value2 = Integer.parseInt(queueValue.poll());
+		
+		System.out.println(value1 + operation + value2);
+	}
+}

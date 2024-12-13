@@ -1,0 +1,12 @@
+package calculator;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Calculation calc = new Calculation();
+		calc.setInputValue("1");
+		calc.setInputValue("+");
+		calc.setInputValue("1");
+	}
+
+}

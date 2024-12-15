@@ -3,17 +3,9 @@ package calculator;
 public class Main {
 
 	public static void main(String[] args) {
-		Calculation calc = new Calculation();
+		Graphic g = new Graphic();
+		g.run();
 
-		calc.addToQueueValue("5");
-		calc.addToQueueValue("*");
-		calc.addToQueueValue("5");
-		calc.addToQueueValue("+");
-		calc.addToQueueValue("5");
-		calc.addToQueueValue("-");
-		calc.addToQueueValue("5");
-		
-		calc.calculatingValue();
 	}
 
 }

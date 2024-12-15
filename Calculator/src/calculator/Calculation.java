@@ -17,6 +17,10 @@ public class Calculation {
 		return this.temp = queueValue.remove();
 	}
 	
+	public void clearQueue() {
+		queueValue.clear();
+	}
+	
 	public void calculatingValue() {
 		
 		this.value1 = Integer.parseInt(decreaseQueue());
@@ -44,7 +48,9 @@ public class Calculation {
 		}
 	}
 	
-	public int getTotal() {
-		return this.Total;
+	public String getTotal() {
+		String STotal = Integer.toString(this.Total);
+		return STotal;
 	}
+	
 }

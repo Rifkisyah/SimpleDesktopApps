@@ -1,0 +1,12 @@
+[submodule "SimpleJavaCalculator"]
+	path = SimpleJavaCalculator
+	url = https://github.com/Rifkisyah/SimpleJavaCalculator.git
+[submodule "SimpleStopwatch"]
+	path = SimpleStopwatch
+	url = https://github.com/Rifkisyah/SimpleStopwatch.git
+[submodule "SimplePasswordGenerator"]
+	path = SimplePasswordGenerator
+	url = https://github.com/Rifkisyah/SimplePasswordGenerator.git
+[submodule "SimpleNumberConverter"]
+	path = SimpleNumberConverter
+	url = https://github.com/Rifkisyah/SimpleNumberConverter.git
